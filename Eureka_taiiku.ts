@@ -81,10 +81,10 @@ namespace matubara_blocks {
 
  //% weight=39 blockId=x_ude_more block="Ｘ＿腕をふる角度が |%limit| 度より |%kakudo|" group="センサー"
     export function x_ude_more (limit:limit_deg,kakudo:daisyou): boolean {
-    basic.showNumber(limit)
+    basic.showNumber(limit*10)
     switch(kakudo){
         case daisyou.大きい:
-        if ((input.acceleration(Dimension.X)/1100*90)+90 > limit )
+        if ((input.acceleration(Dimension.X)/1100*90)+90 > limit*10 )
             {
             return true;
             }
@@ -93,7 +93,7 @@ namespace matubara_blocks {
             return false;
             }
         case daisyou.小さい :
-            if ((input.acceleration(Dimension.X)/1100*90)+90 < limit ){
+            if ((input.acceleration(Dimension.X)/1100*90)+90 < limit*10 ){
             return true;
             }
             else
@@ -108,14 +108,14 @@ namespace matubara_blocks {
   export function y_ude_more(limit: limit_deg,kakudo:daisyou): boolean {
      switch(kakudo){
         case daisyou.大きい:
-        if ((input.acceleration(Dimension.Y)/1100*90) > limit ){
+        if ((input.acceleration(Dimension.Y)/1100*90) > limit*10 ){
             return true;
             }else{
             return false;
         }
  
         case daisyou.小さい :
-        if ((input.acceleration(Dimension.Y)/1100*90) < limit ){
+        if ((input.acceleration(Dimension.Y)/1100*90) < limit*10 ){
             return true;
             }else{
             return false;
@@ -127,14 +127,14 @@ namespace matubara_blocks {
   export function z_ude_more(limit: limit_deg,kakudo:daisyou): boolean {
      switch(kakudo){
         case daisyou.大きい:
-        if ((input.acceleration(Dimension.Z)/1100*90) > limit ){
+        if ((input.acceleration(Dimension.Z)/1100*90) > limit*10 ){
             return true;
             }else{
             return false;
         }
         
         case daisyou.小さい :
-        if ((input.acceleration(Dimension.Z)/1100*90) < limit ){
+        if ((input.acceleration(Dimension.Z)/1100*90) < limit*10 ){
             return true;
             }else{
             return false;
