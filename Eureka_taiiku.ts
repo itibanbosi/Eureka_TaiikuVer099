@@ -79,7 +79,7 @@ namespace matubara_blocks {
   }
 
 
- //% weight=39 blockId=x_ude_more block="ｘ＿腕をふる角度が |%limit| 度より |%kakudo|" group="センサー"
+ //% weight=39 blockId=x_ude_more block="Ｘ＿腕をふる角度が |%limit| 度より |%kakudo|" group="センサー"
     export function x_ude_more (limit:limit_deg,kakudo:daisyou): boolean {
     switch(kakudo){
         case daisyou.大きい:
