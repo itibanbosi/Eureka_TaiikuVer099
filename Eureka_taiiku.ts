@@ -79,7 +79,7 @@ namespace matubara_blocks {
   }
 
 
- //% weight=39 blockId=x_ude_more block="X軸＿腕をふる角度が |%limit| 度より |%kakudo|" group="センサー"
+ //% weight=39 blockId=x_ude_more block="ｘ＿腕をふる角度が |%limit| 度より |%kakudo|" group="センサー"
     export function x_ude_more (limit:limit_deg,kakudo:daisyou): boolean {
     switch(kakudo){
         case daisyou.大きい:
@@ -103,7 +103,7 @@ namespace matubara_blocks {
     }
 
  
- //% weight=37 blockId=y_ude_more block="ｙ軸＿腕をふる角度が |%limit| 度より |%kakudo|" group="センサー"
+ //% weight=37 blockId=y_ude_more block="Ｙ＿腕をふる角度が |%limit| 度より |%kakudo|" group="センサー"
   export function y_ude_more(limit: limit_deg,kakudo:daisyou): boolean {
      switch(kakudo){
         case daisyou.大きい:
@@ -122,7 +122,7 @@ namespace matubara_blocks {
     }   
   }
  
- //% weight=35 blockId=z_ude_more block="ｚ軸＿腕をふる角度が |%limit| 度より |%kakudo|" group="センサー"
+ //% weight=35 blockId=z_ude_more block="Ｚ＿腕をふる角度が |%limit| 度より |%kakudo|" group="センサー"
   export function z_ude_more(limit: limit_deg,kakudo:daisyou): boolean {
      switch(kakudo){
         case daisyou.大きい:
