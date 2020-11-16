@@ -81,6 +81,7 @@ namespace matubara_blocks {
 
  //% weight=39 blockId=x_ude_more block="Ｘ＿腕をふる角度が |%limit| 度より |%kakudo|" group="センサー"
     export function x_ude_more (limit:limit_deg,kakudo:daisyou): boolean {
+    basic.showNumber(limit)
     switch(kakudo){
         case daisyou.大きい:
         if ((input.acceleration(Dimension.X)/1100*90)+90 > limit )
