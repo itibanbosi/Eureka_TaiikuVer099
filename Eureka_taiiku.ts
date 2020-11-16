@@ -61,7 +61,7 @@ enum limit_deg {
 
 
 
-//% color="#3943c2" block="上教大_体育V0.98"
+//% color="#3943c2" block="上教大_体育V0.99"
 namespace matubara_blocks {
 
 
