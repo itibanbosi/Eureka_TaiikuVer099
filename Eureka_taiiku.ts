@@ -12,7 +12,7 @@ enum select_xyz {
     Z,
     }
 
-enum limit {
+enum limit_deg {
     //% block="0",
     zero,
     //% block="10",
@@ -80,7 +80,7 @@ namespace matubara_blocks {
 
 
  //% weight=39 blockId=x_ude_more block="X軸＿腕をふる角度が |%limit| 度より |%kakudo|" group="センサー"
-    export function x_ude_more (limit:number,kakudo:daisyou): boolean {
+    export function x_ude_more (limit:limit_deg,kakudo:daisyou): boolean {
     switch(kakudo){
         case daisyou.大きい:
         if ((input.acceleration(Dimension.X)/1100*90)+90 > limit )
