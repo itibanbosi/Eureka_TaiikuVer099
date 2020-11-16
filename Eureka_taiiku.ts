@@ -104,7 +104,7 @@ namespace matubara_blocks {
 
  
  //% weight=37 blockId=y_ude_more block="ｙ軸＿腕をふる角度が |%limit| 度より |%kakudo|" group="センサー"
-  export function y_ude_more(limit: number,kakudo:daisyou): boolean {
+  export function y_ude_more(limit: limit_deg,kakudo:daisyou): boolean {
      switch(kakudo){
         case daisyou.大きい:
         if ((input.acceleration(Dimension.Y)/1100*90) > limit ){
@@ -123,7 +123,7 @@ namespace matubara_blocks {
   }
  
  //% weight=35 blockId=z_ude_more block="ｚ軸＿腕をふる角度が |%limit| 度より |%kakudo|" group="センサー"
-  export function z_ude_more(limit: number,kakudo:daisyou): boolean {
+  export function z_ude_more(limit: limit_deg,kakudo:daisyou): boolean {
      switch(kakudo){
         case daisyou.大きい:
         if ((input.acceleration(Dimension.Z)/1100*90) > limit ){
