@@ -191,6 +191,27 @@ namespace matubara_blocks {
     basic.pause(second * 1000);
   }
 
-
+ //% weight=9 blockId=x_ude_more_sub block="腕をふる角度が |%limit| 度より |%kakudo|" group="センサー"
+    export function x_ude_more_sub (limit:number,kakudo:daisyou): boolean {
+    switch(kakudo){
+        case daisyou.大きい:
+        if ((input.acceleration(Dimension.X)/1100*90)+90 > limit*10 )
+            {
+            return true;
+            }
+            else
+            {
+            return false;
+            }
+        case daisyou.小さい :
+            if ((input.acceleration(Dimension.X)/1100*90)+90 < limit*10 ){
+            return true;
+            }
+            else
+            {
+            return false;
+            }
+        }
+    }
 
 }
