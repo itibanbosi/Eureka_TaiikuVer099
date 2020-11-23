@@ -191,7 +191,7 @@ namespace matubara_blocks {
     basic.pause(second * 1000);
   }
 
- //% color="#009A00" weight=9 blockId=x_ude_more_sub block="腕をふる角度が |%limit| 度より |%kakudo|" group="予備ブロック"
+ //% color="#009A00" weight=9 blockId=x_ude_more_sub block="腕をふる角度が |%limit| 度より |%kakudo|" group="予備"
     export function x_ude_more_sub (limit:number,kakudo:daisyou): boolean {
     switch(kakudo){
         case daisyou.大きい:
