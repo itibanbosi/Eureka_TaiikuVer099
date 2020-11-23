@@ -195,7 +195,7 @@ namespace matubara_blocks {
     export function x_ude_more_sub (limit:number,kakudo:daisyou): boolean {
     switch(kakudo){
         case daisyou.大きい:
-        if ((input.acceleration(Dimension.X)/1100*90)+90 > limit*10 )
+        if ((input.acceleration(Dimension.X)/1100*90)+90 > limit )
             {
             return true;
             }
@@ -204,7 +204,7 @@ namespace matubara_blocks {
             return false;
             }
         case daisyou.小さい :
-            if ((input.acceleration(Dimension.X)/1100*90)+90 < limit*10 ){
+            if ((input.acceleration(Dimension.X)/1100*90)+90 < limit ){
             return true;
             }
             else
