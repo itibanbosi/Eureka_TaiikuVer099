@@ -79,7 +79,7 @@ namespace matubara_blocks {
   }
 
 
- //% weight=39 blockId=x_ude_more block="Ｘ＿腕をふる角度が |%limit| 度より |%kakudo|" group="センサー"
+ //% weight=39 blockId=x_ude_more block="腕をふる角度が |%limit| 度より |%kakudo|" group="センサー"
     export function x_ude_more (limit:limit_deg,kakudo:daisyou): boolean {
     switch(kakudo){
         case daisyou.大きい:
@@ -101,7 +101,7 @@ namespace matubara_blocks {
             }
         }
     }
-
+/*
  
  //% weight=37 blockId=y_ude_more block="Ｙ＿腕をふる角度が |%limit| 度より |%kakudo|" group="センサー"
   export function y_ude_more(limit: limit_deg,kakudo:daisyou): boolean {
@@ -140,7 +140,7 @@ namespace matubara_blocks {
         }
     }
     }   
-
+*/
  //% color="#ffa800" weight=23 blockId=vib_kanketu block="振動する（音なし）" group="機能"
   export function vib_kanketu() {
     let i=0;
